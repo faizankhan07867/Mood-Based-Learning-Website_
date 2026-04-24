@@ -100,6 +100,9 @@ try {
 await faceapi.nets.tinyFaceDetector.loadFromUri("models");
 await faceapi.nets.faceExpressionNet.loadFromUri("models");
 
+ await faceapi.nets.tinyFaceDetector.loadFromUri('/Mood-Based-Learning-Website_/models');
+await faceapi.nets.faceExpressionNet.loadFromUri('/Mood-Based-Learning-Website_/models');
+
 const stream = await navigator.mediaDevices.getUserMedia({
 video:true
 });
